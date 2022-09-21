@@ -10,7 +10,7 @@ HARD_LIFE=5
 def check_answer(user_guess,choice_random,turns):
   if user_guess==choice_random:
     print(f"your answer is crct: {choice_random}")
-    return turns-1
+    return turns
   elif user_guess>choice_random:
     print("Too high")
     return turns-1
@@ -18,6 +18,7 @@ def check_answer(user_guess,choice_random,turns):
     
   elif user_guess<choice_random:
       print("too low")
+      return turns-1
   
       
 def level():
